@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+* {
+    user-select: none;
+    font-family: "Quicksand", sans-serif;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+}
+
+#CorpoCadastro {
+    background: linear-gradient(to left, #f2fff2, #c1ffc6);
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-weight: bolder;
+    font-size: 300%;
+}
+
+nav {
+    background-color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #000000;
+    background-color: #fafafa;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+nav ul li a:hover {
+    color: #535353;
+    background-color: #dbdbdb;
+}
+
+main {
+    padding: 20px;
+}
+
+input[type="date"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    outline: none;
+}
+
+.dataNota {
+    margin-left: 10px;
+}
+
+#clienteInput {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    outline: none;
+}
+
+#cliente {
+    width: 100%;
+}
+
+#voltar {
+    margin-right: 5px;
+}
+
+#janela_flutuante {
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 8px 11px 4px rgba(0, 0, 0, 0.16), 0 8px 16px 0 rgba(0, 0, 0, 0.12);
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+}
+
+footer {
+    background-color: rgb(128, 128, 128);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px;
+    margin-top: 40%;
+}
+
+h2 {
+    text-align: center;
+    color: #000000;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
+
+input[type="submit"], input[type="button"] {
+    background-color: #20d326;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    padding: 14px 20px;
+    margin: 8px 0;
+    cursor: pointer;
+    border: 1px solid #000000;
+    width: 100%;
+    border-radius: 10px;
+}
+
+button {
+    background-color: #20d326;
+    font-weight: bolder;
+    font-size: large;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    margin: 8px 0;
+    cursor: pointer;
+    border: 1px solid #000000;
+    width: 100%;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #27b32b;
+    border: 1px solid #000000;
+}
+
+input[type="submit"]:hover, input[type="button"]:hover {
+    background-color: #27b32b;
+    border: 1px solid #000000;
+}
+
+::placeholder {
+    color: rgb(73, 73, 73);
+}
+
+#detalhesRomaneio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#detalhesRomaneio p {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid black;
+    margin: 10px 0;
+}
+
+#declaracao {
+    background-color: #e6e6e6;
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#declaracao:hover {
+    background-color: #cacaca;
+}
+
+@media (min-width: 768px) {
+    #detalhesRomaneio {
+        flex-direction: row;
+        width: 83%;
+        margin-left: 8.5%;
+    }
+
+    #detalhesRomaneio p {
+        flex: 0 0 32%;
+    }
+
+    #declaracao {
+        width: 20%;
+        margin-left: 70%;
+    }
+}
